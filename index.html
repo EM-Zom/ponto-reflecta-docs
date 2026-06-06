@@ -1,171 +1,296 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-palette="teal">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Ponto Reflecta — Política de Privacidade</title>
-<style>
-  :root {
-    --brand: #C7CF5A;
-    --brand-dark: #aab44a;
-    --brand-soft: #f1f4cf;
-    --ink: #2d3122;
-    --ink-soft: #6b7050;
-    --bg: #fafaf2;
-    --card: #ffffff;
-  }
-  html, body { background: var(--bg); color: var(--ink); margin: 0; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.65;
-    padding: 24px 16px 80px;
-  }
-  main { max-width: 720px; margin: 0 auto; }
-  header { text-align: center; padding: 32px 0 16px; border-bottom: 1px solid #e5e5d8; margin-bottom: 32px; }
-  header h1 { margin: 8px 0 4px; font-size: 28px; color: var(--ink); }
-  header p { margin: 4px 0; color: var(--ink-soft); font-size: 14px; }
-  header .pill {
-    display: inline-block; padding: 4px 10px; border-radius: 999px;
-    background: var(--brand-soft); color: var(--brand-dark);
-    font-size: 12px; font-weight: 700; letter-spacing: .05em;
-  }
-  h2 { color: var(--ink); margin-top: 36px; font-size: 20px; border-left: 3px solid var(--brand-dark); padding-left: 12px; }
-  h3 { color: var(--ink); margin-top: 24px; font-size: 16px; }
-  p, li { color: var(--ink); font-size: 15px; }
-  ul { padding-left: 24px; }
-  li { margin-bottom: 6px; }
-  a { color: var(--brand-dark); }
-  footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid #e5e5d8; color: var(--ink-soft); font-size: 13px; text-align: center; }
-  .section { background: var(--card); border: 1px solid #e5e5d8; border-radius: 12px; padding: 20px 24px; margin-top: 16px; }
-  code, kbd { background: var(--brand-soft); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
-</style>
+<title>Vida Vista · Ponto Reflecta — Política de Privacidade</title>
+<meta name="description" content="Como o aplicativo Ponto Reflecta, da Vida Vista, coleta, usa e protege seus dados — em conformidade com a LGPD." />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/vidavista.css" />
 </head>
-<body>
-<main>
+<body data-page="privacidade">
 
-<header>
-  <span class="pill">Ponto Reflecta</span>
-  <h1>Política de Privacidade</h1>
-  <p>Aplicativo iOS / Android — Controle de ponto eletrônico</p>
-  <p>Última atualização: 4 de junho de 2026</p>
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__mark" src="assets/vidavista-mark.png" alt="Vida Vista" />
+      <span class="brand__name">Vida Vista <span>· Ponto Reflecta</span></span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html" aria-current="page">Privacidade</a>
+      <a href="suporte.html">Suporte</a>
+    </nav>
+  </div>
 </header>
 
-<div class="section">
-<p><strong>Quem somos.</strong> O Ponto Reflecta é um aplicativo desenvolvido para uso interno da rede de clínicas Vida Vista, com o propósito exclusivo de registrar a jornada de trabalho dos seus colaboradores (controle de ponto eletrônico). O aplicativo é distribuído gratuitamente nas lojas Apple App Store e Google Play, mas seu uso depende de um login válido fornecido pela administração da Vida Vista.</p>
-<p><strong>Controlador dos dados:</strong> Vida Vista Clínica.<br/>
-<strong>Encarregado de Dados (DPO):</strong> <a href="mailto:enioacc@gmail.com">enioacc@gmail.com</a></p>
+<!-- ===================== HERO ===================== -->
+<section class="hero" data-screen-label="Hero — Privacidade">
+  <img class="hero__mark" src="assets/vidavista-mark.png" alt="" aria-hidden="true" />
+  <div class="hero__inner">
+    <div class="hero__eyebrow">Ponto Reflecta · Documento legal</div>
+    <h1>Política de Privacidade</h1>
+    <p class="hero__lede">Como o Ponto Reflecta — o aplicativo de controle de ponto da Vida Vista — coleta, processa e protege seus dados. Escrito para ser claro, em conformidade integral com a LGPD.</p>
+    <div class="hero__meta">
+      <span class="hchip"><i class="fa-regular fa-calendar"></i> Atualizado em <span class="mono">04/06/2026</span></span>
+      <span class="hchip"><i class="fa-brands fa-apple"></i> iOS <i class="fa-brands fa-android"></i> Android</span>
+      <span class="hchip"><i class="fa-solid fa-shield-halved"></i> LGPD · Lei 13.709/2018</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DOCS ===================== -->
+<div class="docs">
+
+  <!-- TOC -->
+  <aside class="toc" aria-label="Sumário">
+    <p class="toc__title">Nesta página</p>
+    <nav>
+      <ol>
+        <li><a href="#s1">Dados que coletamos</a></li>
+        <li><a href="#s2">O que não coletamos</a></li>
+        <li><a href="#s3">Base legal (LGPD)</a></li>
+        <li><a href="#s4">Compartilhamento</a></li>
+        <li><a href="#s5">Retenção</a></li>
+        <li><a href="#s6">Seus direitos</a></li>
+        <li><a href="#s7">Segurança</a></li>
+        <li><a href="#s8">Crianças</a></li>
+        <li><a href="#s9">Alterações</a></li>
+        <li><a href="#s10">Contato</a></li>
+      </ol>
+    </nav>
+  </aside>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <div class="card card--intro">
+      <p style="margin-top:0"><strong>Quem somos.</strong> O Ponto Reflecta é um aplicativo desenvolvido para uso interno da rede de clínicas Vida Vista, com o propósito exclusivo de registrar a jornada de trabalho dos colaboradores (controle de ponto eletrônico). É distribuído gratuitamente na Apple App Store e no Google Play, mas seu uso depende de um login válido fornecido pela administração da Vida Vista.</p>
+      <div class="kv" style="margin-bottom:0">
+        <div class="kv__row">
+          <div class="kv__k"><i class="fa-solid fa-building-shield"></i> Controlador</div>
+          <div class="kv__v">Vida Vista Clínica</div>
+        </div>
+        <div class="kv__row">
+          <div class="kv__k"><i class="fa-solid fa-user-shield"></i> Encarregado (DPO)</div>
+          <div class="kv__v"><a href="mailto:enioacc@gmail.com">enioacc@gmail.com</a></div>
+        </div>
+      </div>
+    </div>
+
+    <section id="s1">
+      <div class="sec-head"><span class="sec-num">01</span><h2>Dados que coletamos</h2></div>
+      <div class="card">
+        <h3>Dados de identificação</h3>
+        <ul>
+          <li><strong>Login e senha</strong> — fornecidos pela administração da clínica; usados apenas para autenticar você na nossa API.</li>
+          <li><strong>Nome, e-mail e identificador profissional</strong> — vinculados ao seu cadastro de funcionário da Vida Vista.</li>
+          <li><strong>Identificador único do dispositivo</strong> (<code>UUID</code> gerado pelo app) — vincula cada batida ao aparelho que a registrou, prevenindo fraudes.</li>
+        </ul>
+
+        <h3>Dados biométricos (reconhecimento facial)</h3>
+        <ul>
+          <li>No <strong>cadastro inicial</strong>, o app coleta <strong>3 selfies</strong> em ângulos diferentes (frente, perfil esquerdo, perfil direito).</li>
+          <li>Em cada <strong>registro de ponto</strong>, coleta <strong>uma selfie</strong> com prova de vida (movimento detectado por IA no próprio aparelho antes do envio).</li>
+          <li>As selfies vão a um servidor da Vida Vista, onde um modelo de reconhecimento facial (<em>face_recognition</em>, baseado em dlib) extrai um <strong>vetor matemático</strong> (<code>embedding</code> de 128 dimensões) representativo do rosto.</li>
+        </ul>
+        <div class="callout">
+          <i class="fa-solid fa-lock"></i>
+          <p>É esse vetor — <strong>não a imagem</strong> — que fica armazenado a longo prazo, em formato impossível de reverter para fotos. Imagens originais ficam por até <strong>30 dias</strong> em ambiente isolado e auditável (S3 privado), exclusivamente para auditoria humana em caso de contestação. Depois, são apagadas automaticamente.</p>
+        </div>
+        <p>Esse processamento é <strong>indispensável</strong> ao objetivo do app — controle de ponto não-fraudável. Sem ele, o sistema não funciona.</p>
+
+        <h3>Localização (GPS)</h3>
+        <ul>
+          <li>O app captura sua <strong>posição GPS apenas no momento exato</strong> de cada batida (entrada, saída, intervalo).</li>
+          <li>A localização verifica se você está dentro da área autorizada (geofencing por polígono do local de trabalho).</li>
+          <li><strong>Nunca acessamos sua localização em segundo plano</strong> — somente quando você toca em “Bater ponto”.</li>
+          <li>A coordenada (latitude/longitude) e o nome do local detectado ficam registrados em cada batida, para auditoria.</li>
+        </ul>
+
+        <h3>Dados técnicos</h3>
+        <ul>
+          <li>Modelo do aparelho, versão do sistema operacional e versão do app — para suporte e diagnóstico de bugs.</li>
+          <li>Logs de erros (sem dados pessoais) podem ser enviados ao servidor para análise.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="s2">
+      <div class="sec-head"><span class="sec-num">02</span><h2>O que <em>não</em> coletamos</h2></div>
+      <div class="card">
+        <ul>
+          <li>Não usamos cookies de rastreamento nem pixels publicitários.</li>
+          <li>Não compartilhamos dados com redes de anúncios.</li>
+          <li>Não acessamos sua agenda de contatos, fotos da galeria, microfone (exceto durante a captura facial), histórico de navegação ou qualquer dado fora do escopo do controle de ponto.</li>
+          <li>Não fazemos rastreamento entre apps (<em>cross-app tracking</em>) — alinhado à política <em>App Tracking Transparency</em> da Apple.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="s3">
+      <div class="sec-head"><span class="sec-num">03</span><h2>Base legal (LGPD)</h2></div>
+      <div class="card">
+        <p>O tratamento dos seus dados se enquadra nas seguintes bases legais da <strong>Lei Geral de Proteção de Dados (Lei 13.709/2018)</strong>:</p>
+        <ul>
+          <li><strong>Cumprimento de obrigação legal</strong> (art. 7º, II) — o registro de ponto é obrigatório pela CLT (art. 74) para estabelecimentos com mais de 20 colaboradores.</li>
+          <li><strong>Execução de contrato de trabalho</strong> (art. 7º, V) — o aplicativo é instrumento do seu vínculo empregatício com a Vida Vista.</li>
+          <li><strong>Consentimento específico</strong> (art. 7º, I e art. 11, II, “a”) — para os dados biométricos (embedding facial), você concede consentimento expresso no cadastro inicial das selfies, podendo revogá-lo a qualquer momento.</li>
+        </ul>
+        <div class="callout">
+          <i class="fa-solid fa-circle-info"></i>
+          <p>Ao revogar o consentimento biométrico, fica impossível bater ponto pelo app; será necessário o método alternativo determinado pelo RH.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="s4">
+      <div class="sec-head"><span class="sec-num">04</span><h2>Compartilhamento</h2></div>
+      <div class="card">
+        <p>Seus dados <strong>não são vendidos, alugados ou compartilhados</strong> com terceiros para fins comerciais. O acesso é restrito a:</p>
+        <ul>
+          <li>Equipe interna da Vida Vista responsável por RH e Departamento Pessoal.</li>
+          <li>Provedores de infraestrutura técnica, sob contrato de processador, sem acesso ao conteúdo dos dados:
+            <ul>
+              <li>API hospedada em VPS próprio, gerenciado via Dokploy.</li>
+              <li>Banco de dados MySQL próprio.</li>
+              <li>Armazenamento de imagens em bucket S3 privado.</li>
+            </ul>
+          </li>
+          <li>Autoridades públicas, mediante ordem judicial ou requisição legal.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="s5">
+      <div class="sec-head"><span class="sec-num">05</span><h2>Retenção</h2></div>
+      <div class="card">
+        <div class="kv" style="margin-top:0">
+          <div class="kv__row">
+            <div class="kv__k"><i class="fa-solid fa-fingerprint"></i> Registros de ponto</div>
+            <div class="kv__v"><span class="mono">5 anos</span> — conforme art. 11, §2 da Portaria MTb 671/2021.</div>
+          </div>
+          <div class="kv__row">
+            <div class="kv__k"><i class="fa-solid fa-face-viewfinder"></i> Embeddings faciais</div>
+            <div class="kv__v">Enquanto durar o vínculo; excluídos em até <span class="mono">90 dias</span> após o desligamento ou revogação do consentimento.</div>
+          </div>
+          <div class="kv__row">
+            <div class="kv__k"><i class="fa-solid fa-camera"></i> Imagens originais</div>
+            <div class="kv__v">Excluídas automaticamente após <span class="mono">30 dias</span>.</div>
+          </div>
+          <div class="kv__row">
+            <div class="kv__k"><i class="fa-solid fa-terminal"></i> Logs técnicos</div>
+            <div class="kv__v"><span class="mono">90 dias</span>.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="s6">
+      <div class="sec-head"><span class="sec-num">06</span><h2>Seus direitos</h2></div>
+      <div class="card">
+        <p>Pela LGPD (art. 18), você pode, a qualquer momento, solicitar:</p>
+        <ul>
+          <li>Confirmação de que tratamos seus dados.</li>
+          <li>Acesso aos seus dados.</li>
+          <li>Correção de dados incompletos ou desatualizados.</li>
+          <li>Eliminação dos seus dados biométricos (revogação do consentimento).</li>
+          <li>Portabilidade dos seus dados a outro fornecedor.</li>
+          <li>Informação sobre com quem seus dados foram compartilhados.</li>
+        </ul>
+        <p>Para exercer esses direitos, escreva para <a href="mailto:enioacc@gmail.com?subject=LGPD%20%E2%80%94%20Ponto%20Reflecta">enioacc@gmail.com</a> com o assunto “LGPD — Ponto Reflecta”. Respondemos em até <strong>15 dias</strong>.</p>
+      </div>
+    </section>
+
+    <section id="s7">
+      <div class="sec-head"><span class="sec-num">07</span><h2>Segurança</h2></div>
+      <div class="card">
+        <ul>
+          <li>Todo tráfego entre o app e a API é criptografado em <strong>HTTPS/TLS 1.2+</strong> (forçado, sem fallback HTTP).</li>
+          <li>Senhas são armazenadas com <strong>bcrypt</strong> (<code>custo 11</code>), nunca em texto puro.</li>
+          <li>Embeddings faciais são vetores binários, não imagens — não é possível reconstruir o rosto a partir deles.</li>
+          <li>O acesso ao banco de dados é restrito por IP e autenticação por chave.</li>
+          <li>Backups são criptografados em repouso.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="s8">
+      <div class="sec-head"><span class="sec-num">08</span><h2>Crianças</h2></div>
+      <div class="card">
+        <p style="margin:0">O Ponto Reflecta destina-se exclusivamente a colaboradores maiores de 18 anos vinculados à Vida Vista. Não coletamos intencionalmente dados de crianças.</p>
+      </div>
+    </section>
+
+    <section id="s9">
+      <div class="sec-head"><span class="sec-num">09</span><h2>Alterações</h2></div>
+      <div class="card">
+        <p style="margin:0">Esta política pode ser revisada periodicamente. Mudanças substanciais serão comunicadas por aviso no próprio aplicativo. A versão publicada neste endereço (<a href="https://app.vistaotica.com.br/">app.vistaotica.com.br</a>) é sempre a vigente.</p>
+      </div>
+    </section>
+
+    <section id="s10">
+      <div class="sec-head"><span class="sec-num">10</span><h2>Contato</h2></div>
+      <div class="card">
+        <div class="kv" style="margin-top:0">
+          <div class="kv__row">
+            <div class="kv__k"><i class="fa-solid fa-envelope"></i> E-mail (DPO)</div>
+            <div class="kv__v"><a href="mailto:enioacc@gmail.com">enioacc@gmail.com</a></div>
+          </div>
+          <div class="kv__row">
+            <div class="kv__k"><i class="fa-solid fa-mobile-screen"></i> Aplicativo</div>
+            <div class="kv__v">Ponto Reflecta</div>
+          </div>
+          <div class="kv__row">
+            <div class="kv__k"><i class="fa-solid fa-building"></i> Desenvolvido por</div>
+            <div class="kv__v">Vida Vista Clínica</div>
+          </div>
+        </div>
+        <p>Caso entenda que seus direitos não foram respeitados, você pode recorrer à <a href="https://www.gov.br/anpd/pt-br" target="_blank" rel="noopener">Autoridade Nacional de Proteção de Dados — ANPD</a>.</p>
+      </div>
+    </section>
+
+  </main>
 </div>
 
-<h2>1. Dados que coletamos</h2>
-
-<h3>1.1 Dados de identificação</h3>
-<ul>
-  <li><strong>Login e senha</strong> — fornecidos pela administração da clínica; usados apenas para autenticar você na nossa API.</li>
-  <li><strong>Nome, e-mail e identificador profissional</strong> — vinculados ao seu cadastro de funcionário da Vida Vista.</li>
-  <li><strong>Identificador único do dispositivo</strong> (UUID gerado pelo app) — usado para vincular cada batida ao aparelho que a registrou, prevenindo fraudes.</li>
-</ul>
-
-<h3>1.2 Dados biométricos (reconhecimento facial)</h3>
-<ul>
-  <li>Durante o <strong>cadastro inicial</strong>, o app coleta <strong>3 selfies</strong> em ângulos diferentes (frente, perfil esquerdo, perfil direito).</li>
-  <li>Durante cada <strong>registro de ponto</strong>, o app coleta <strong>uma selfie</strong> com prova de vida (movimento detectado por IA on-device antes do envio).</li>
-  <li>As selfies são enviadas a um servidor de propriedade da Vida Vista, onde um modelo de reconhecimento facial (<em>face_recognition</em>, baseado em dlib) extrai um <strong>vetor matemático</strong> (embedding 128-dimensional) representativo do rosto. <strong>É esse vetor — e não a imagem em si — que fica armazenado a longo prazo</strong>, em formato impossível de reverter para fotos.</li>
-  <li>Imagens originais podem ser armazenadas por até 30 dias em ambiente isolado e auditável (S3 privado), exclusivamente para fins de auditoria humana em caso de contestação de uma batida específica. Após esse prazo, são apagadas automaticamente.</li>
-  <li>Esse processamento é <strong>indispensável</strong> para o objetivo do app (controle de ponto não-fraudável). Sem ele, o sistema não funciona.</li>
-</ul>
-
-<h3>1.3 Localização (GPS)</h3>
-<ul>
-  <li>O app captura sua <strong>posição GPS apenas no momento exato</strong> de cada batida de ponto (entrada, saída, intervalo).</li>
-  <li>A localização é usada para verificar se você está dentro da área geográfica autorizada (geofencing por polígono do local de trabalho).</li>
-  <li><strong>Nunca acessamos sua localização em segundo plano</strong>, ou seja, fora do momento em que você toca em "Bater ponto".</li>
-  <li>A coordenada (latitude/longitude) e o nome do local detectado ficam registrados em cada batida para fins de auditoria.</li>
-</ul>
-
-<h3>1.4 Dados técnicos</h3>
-<ul>
-  <li>Modelo do aparelho, versão do sistema operacional e versão do app — para suporte técnico e diagnóstico de bugs.</li>
-  <li>Logs de erros (sem dados pessoais) podem ser enviados ao servidor para análise.</li>
-</ul>
-
-<h2>2. O que NÃO coletamos</h2>
-<ul>
-  <li>Não usamos cookies de rastreamento ou pixels publicitários.</li>
-  <li>Não compartilhamos dados com redes de anúncios.</li>
-  <li>Não acessamos sua agenda de contatos, fotos da galeria, microfone (sem ser durante uma captura facial), histórico de navegação ou qualquer outro dado fora do escopo do controle de ponto.</li>
-  <li>Não fazemos rastreamento entre apps (<em>cross-app tracking</em>) — alinhado com a política <em>App Tracking Transparency</em> da Apple.</li>
-</ul>
-
-<h2>3. Base legal (LGPD)</h2>
-<p>O tratamento dos seus dados se enquadra nas seguintes bases legais da <strong>Lei Geral de Proteção de Dados (Lei 13.709/2018)</strong>:</p>
-<ul>
-  <li><strong>Cumprimento de obrigação legal</strong> (art. 7º, II) — o registro de ponto é obrigatório pela CLT (art. 74) para estabelecimentos com mais de 20 colaboradores.</li>
-  <li><strong>Execução de contrato de trabalho</strong> (art. 7º, V) — o aplicativo é instrumento do seu vínculo empregatício com a Vida Vista.</li>
-  <li><strong>Consentimento específico</strong> (art. 7º, I e art. 11, II, "a") — para o uso de dados biométricos (embedding facial), você concede consentimento expresso no momento do cadastro inicial das selfies, podendo revogá-lo a qualquer momento (consequência: impossibilidade de bater ponto pelo app, sendo necessário usar método alternativo determinado pelo RH).</li>
-</ul>
-
-<h2>4. Compartilhamento</h2>
-<p>Seus dados <strong>não são vendidos, alugados ou compartilhados</strong> com terceiros para fins comerciais. O acesso é restrito a:</p>
-<ul>
-  <li>Equipe interna da Vida Vista responsável pelo RH e Departamento Pessoal.</li>
-  <li>Provedores de infraestrutura técnica (hospedagem em nuvem) sob contrato de processador, sem acesso ao conteúdo dos dados:
-    <ul>
-      <li>API hospedada em VPS próprio gerenciado via Dokploy.</li>
-      <li>Banco de dados MySQL próprio.</li>
-      <li>Armazenamento de imagens em bucket S3 privado.</li>
-    </ul>
-  </li>
-  <li>Autoridades públicas, mediante ordem judicial ou requisição legal.</li>
-</ul>
-
-<h2>5. Retenção</h2>
-<ul>
-  <li><strong>Registros de ponto (batidas):</strong> mantidos pelo prazo de 5 anos, conforme art. 11, §2 da Portaria MTb 671/2021.</li>
-  <li><strong>Embeddings faciais:</strong> mantidos enquanto durar o vínculo empregatício; excluídos em até 90 dias após o desligamento ou mediante revogação do consentimento.</li>
-  <li><strong>Imagens originais (selfies):</strong> excluídas automaticamente após 30 dias.</li>
-  <li><strong>Logs técnicos:</strong> 90 dias.</li>
-</ul>
-
-<h2>6. Seus direitos (LGPD art. 18)</h2>
-<p>Você pode, a qualquer momento, solicitar:</p>
-<ul>
-  <li>Confirmação de que tratamos seus dados.</li>
-  <li>Acesso aos seus dados.</li>
-  <li>Correção de dados incompletos ou desatualizados.</li>
-  <li>Eliminação dos seus dados biométricos (revogação do consentimento).</li>
-  <li>Portabilidade dos seus dados a outro fornecedor.</li>
-  <li>Informações sobre com quem seus dados foram compartilhados.</li>
-</ul>
-<p>Para exercer esses direitos, escreva para <a href="mailto:enioacc@gmail.com">enioacc@gmail.com</a> com o assunto "LGPD — Ponto Reflecta". Respondemos em até 15 dias.</p>
-
-<h2>7. Segurança</h2>
-<ul>
-  <li>Todo tráfego entre o app e a API é criptografado em <strong>HTTPS/TLS 1.2+</strong> (forçado, sem fallback HTTP).</li>
-  <li>Senhas são armazenadas com <strong>bcrypt</strong> (custo 11), nunca em texto puro.</li>
-  <li>Embeddings faciais são vetores binários, não imagens — não é possível reconstruir o rosto a partir deles.</li>
-  <li>O acesso ao banco de dados é restrito por IP e autenticação por chave.</li>
-  <li>Backups são criptografados em repouso.</li>
-</ul>
-
-<h2>8. Crianças</h2>
-<p>O Ponto Reflecta destina-se exclusivamente a colaboradores maiores de 18 anos vinculados à Vida Vista. Não coletamos intencionalmente dados de crianças.</p>
-
-<h2>9. Alterações</h2>
-<p>Esta política pode ser revisada periodicamente. Mudanças substanciais serão comunicadas via aviso no próprio aplicativo. A versão sempre disponível neste endereço (<a href="https://app.vistaotica.com.br/">app.vistaotica.com.br</a>) é a vigente.</p>
-
-<h2>10. Contato</h2>
-<p>Para dúvidas, solicitações ou reclamações:</p>
-<ul>
-  <li>E-mail (DPO): <a href="mailto:enioacc@gmail.com">enioacc@gmail.com</a></li>
-  <li>Aplicativo: Ponto Reflecta</li>
-  <li>Desenvolvido por: Vida Vista Clínica</li>
-</ul>
-<p>Caso entenda que seus direitos não foram respeitados, você pode também recorrer à <a href="https://www.gov.br/anpd/pt-br" target="_blank" rel="noopener">Autoridade Nacional de Proteção de Dados — ANPD</a>.</p>
-
-<footer>
-  © 2026 Vida Vista Clínica · Ponto Reflecta · <a href="mailto:enioacc@gmail.com">Suporte</a>
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__mark" src="assets/vidavista-mark.png" alt="" />
+      <span class="brand__name">Vida Vista</span>
+    </a>
+    <span class="site-footer__legal">© 2026 Vida Vista Clínica · Ponto Reflecta</span>
+    <nav class="site-footer__links">
+      <a href="index.html">Privacidade</a>
+      <a href="suporte.html">Suporte</a>
+      <a href="mailto:enioacc@gmail.com">Contato</a>
+    </nav>
+    <div class="compliance">
+      <i class="fa-solid fa-shield-halved"></i>
+      <span>Dados protegidos com <span class="mono">HTTPS/TLS 1.2+</span> · Senhas <span class="mono">bcrypt</span> · Biometria armazenada como vetor irreversível · LGPD</span>
+    </div>
+  </div>
 </footer>
 
-</main>
+<script>
+/* Scroll-spy: highlight the active TOC item */
+(function () {
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  if (!links.length) return;
+  var map = {};
+  links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+  var sections = links.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); }).filter(Boolean);
+  var obs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        links.forEach(function (l) { l.classList.remove('is-active'); });
+        if (map[e.target.id]) map[e.target.id].classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+  sections.forEach(function (s) { obs.observe(s); });
+})();
+</script>
 </body>
 </html>

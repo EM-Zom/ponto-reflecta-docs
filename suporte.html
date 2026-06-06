@@ -1,105 +1,188 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-palette="teal">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Ponto Reflecta — Suporte</title>
-<style>
-  :root {
-    --brand: #C7CF5A; --brand-dark: #aab44a; --brand-soft: #f1f4cf;
-    --ink: #2d3122; --ink-soft: #6b7050; --bg: #fafaf2; --card: #ffffff;
-  }
-  html, body { background: var(--bg); color: var(--ink); margin: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.65; padding: 24px 16px 80px; }
-  main { max-width: 720px; margin: 0 auto; }
-  header { text-align: center; padding: 32px 0 16px; border-bottom: 1px solid #e5e5d8; margin-bottom: 32px; }
-  header h1 { margin: 8px 0 4px; font-size: 28px; }
-  header .pill { display: inline-block; padding: 4px 10px; border-radius: 999px; background: var(--brand-soft); color: var(--brand-dark); font-size: 12px; font-weight: 700; letter-spacing: .05em; }
-  h2 { color: var(--ink); margin-top: 36px; font-size: 20px; border-left: 3px solid var(--brand-dark); padding-left: 12px; }
-  .section { background: var(--card); border: 1px solid #e5e5d8; border-radius: 12px; padding: 20px 24px; margin-top: 16px; }
-  .faq { margin-top: 12px; }
-  .faq summary { cursor: pointer; padding: 12px 16px; background: var(--brand-soft); border-radius: 8px; font-weight: 600; color: var(--ink); }
-  .faq[open] summary { background: var(--brand); }
-  .faq p { padding: 12px 16px; margin: 4px 0 16px; color: var(--ink); }
-  a { color: var(--brand-dark); }
-  footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid #e5e5d8; color: var(--ink-soft); font-size: 13px; text-align: center; }
-  .contact-box { background: var(--brand-soft); border: 1px solid var(--brand-dark); border-radius: 12px; padding: 20px 24px; margin-top: 24px; text-align: center; }
-  .contact-box a { font-size: 18px; font-weight: 700; }
-</style>
+<title>Vida Vista · Ponto Reflecta — Suporte</title>
+<meta name="description" content="Central de suporte do Ponto Reflecta, o aplicativo de controle de ponto da Vida Vista. Perguntas frequentes e contato." />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/vidavista.css" />
 </head>
-<body>
-<main>
+<body data-page="suporte">
 
-<header>
-  <span class="pill">Ponto Reflecta</span>
-  <h1>Central de Suporte</h1>
-  <p>Aplicativo de controle de ponto eletrônico — Vida Vista</p>
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__mark" src="assets/vidavista-mark.png" alt="Vida Vista" />
+      <span class="brand__name">Vida Vista <span>· Ponto Reflecta</span></span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">Privacidade</a>
+      <a href="suporte.html" aria-current="page">Suporte</a>
+    </nav>
+  </div>
 </header>
 
-<div class="section">
-<h2>Precisa de ajuda?</h2>
-<p>Se você está com problemas para usar o Ponto Reflecta, encontrou um erro ou tem alguma sugestão, escreva para nós:</p>
+<!-- ===================== HERO ===================== -->
+<section class="hero" data-screen-label="Hero — Suporte">
+  <img class="hero__mark" src="assets/vidavista-mark.png" alt="" aria-hidden="true" />
+  <div class="hero__inner">
+    <div class="hero__eyebrow">Ponto Reflecta · Central de ajuda</div>
+    <h1>Suporte</h1>
+    <p class="hero__lede">Problemas para bater ponto, dúvidas sobre o reconhecimento facial ou sobre seus dados? As respostas mais comuns estão aqui — e a nossa equipe responde rápido.</p>
+    <div class="hero__meta">
+      <span class="hchip"><i class="fa-regular fa-clock"></i> Resposta em até <span class="mono">1 dia útil</span></span>
+      <span class="hchip"><i class="fa-solid fa-circle-question"></i> 8 perguntas frequentes</span>
+    </div>
+  </div>
+</section>
 
-<div class="contact-box">
-  📧 <a href="mailto:enioacc@gmail.com?subject=Suporte%20Ponto%20Reflecta">enioacc@gmail.com</a>
-  <p style="margin-top:8px;color:var(--ink-soft);font-size:13px">Respondemos em até 1 dia útil.</p>
-</div>
-</div>
+<!-- ===================== CONTENT ===================== -->
+<main class="single">
 
-<h2>Perguntas frequentes</h2>
+  <!-- CONTACT first -->
+  <section data-screen-label="Contato">
+    <div class="contact">
+      <div class="contact__main">
+        <h3>Precisa falar com a gente?</h3>
+        <p>Se você está com problemas para usar o Ponto Reflecta, encontrou um erro ou tem uma sugestão, escreva. Inclua o modelo do aparelho e o que aconteceu — ajuda a resolver mais rápido.</p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn" href="mailto:enioacc@gmail.com?subject=Suporte%20Ponto%20Reflecta"><i class="fa-solid fa-paper-plane"></i> Enviar e-mail</a>
+          <a class="btn btn--ghost" href="index.html"><i class="fa-solid fa-shield-halved"></i> Política de Privacidade</a>
+        </div>
+      </div>
+      <div class="contact__aside">
+        <h4>Atendimento</h4>
+        <div class="sla">
+          <div class="sla__row"><i class="fa-solid fa-envelope"></i> <span class="mono">enioacc@gmail.com</span></div>
+          <div class="sla__row"><i class="fa-solid fa-clock"></i> Resposta em até <span class="mono">1 dia útil</span></div>
+          <div class="sla__row"><i class="fa-solid fa-headset"></i> Setor de TI / RH da Vida Vista</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<details class="faq" open>
-<summary>Esqueci minha senha. Como recupero?</summary>
-<p>A senha de acesso é a mesma usada nos demais sistemas internos da Vida Vista. Para recuperar, entre em contato com o setor de TI / RH da clínica ou escreva para o e-mail de suporte acima.</p>
-</details>
+  <!-- FAQ -->
+  <section style="margin-top:48px;" data-screen-label="Perguntas frequentes">
+    <div class="sec-head"><span class="sec-num"><i class="fa-solid fa-circle-question"></i></span><h2>Perguntas frequentes</h2></div>
 
-<details class="faq">
-<summary>Por que o app me pede para cadastrar 3 selfies?</summary>
-<p>O Ponto Reflecta usa reconhecimento facial para garantir que <strong>ninguém bata seu ponto por você</strong>. As 3 selfies (frente, perfil esquerdo, perfil direito) servem para o sistema aprender seu rosto sob ângulos diferentes, com mais precisão. Depois disso, cada batida pede só uma selfie rápida.</p>
-</details>
+    <div class="faq-list">
 
-<details class="faq">
-<summary>O app diz "fora da área autorizada". O que faço?</summary>
-<p>Significa que o GPS do seu aparelho indica que você está fora da área geográfica registrada para o seu local de trabalho. Verifique se o GPS está ativado, se você concedeu permissão de localização ao app e se está realmente dentro do raio do estabelecimento. Em caso de problemas, fale com o RH.</p>
-</details>
+      <details class="faq" open>
+        <summary>
+          <span class="faq__icon"><i class="fa-solid fa-key"></i></span>
+          Esqueci minha senha. Como recupero?
+          <i class="fa-solid fa-chevron-down faq__chev"></i>
+        </summary>
+        <div class="faq__body">
+          <p>A senha de acesso é a mesma usada nos demais sistemas internos da Vida Vista. Para recuperar, entre em contato com o setor de TI / RH da clínica ou escreva para o e-mail de suporte acima.</p>
+        </div>
+      </details>
 
-<details class="faq">
-<summary>Posso instalar o app em mais de um celular?</summary>
-<p>Cada conta fica vinculada a um único dispositivo autorizado pelo administrador. Se você trocou de celular, peça ao administrador da Vida Vista para autorizar o novo aparelho.</p>
-</details>
+      <details class="faq">
+        <summary>
+          <span class="faq__icon"><i class="fa-solid fa-camera-retro"></i></span>
+          Por que o app pede para cadastrar 3 selfies?
+          <i class="fa-solid fa-chevron-down faq__chev"></i>
+        </summary>
+        <div class="faq__body">
+          <p>O Ponto Reflecta usa reconhecimento facial para garantir que <strong>ninguém bata seu ponto por você</strong>. As 3 selfies (frente, perfil esquerdo, perfil direito) ajudam o sistema a aprender seu rosto sob ângulos diferentes, com mais precisão. Depois disso, cada batida pede só uma selfie rápida.</p>
+        </div>
+      </details>
 
-<details class="faq">
-<summary>O app pediu permissão de câmera, localização e notificações. Por quê?</summary>
-<p><strong>Câmera</strong>: para capturar a selfie de verificação no momento da batida.<br/>
-<strong>Localização</strong>: para confirmar que você está dentro do seu local de trabalho (geofencing). Usada apenas no momento da batida — nunca em segundo plano.<br/>
-<strong>Notificações</strong>: para lembretes de entrada/saída e avisos administrativos.</p>
-</details>
+      <details class="faq">
+        <summary>
+          <span class="faq__icon"><i class="fa-solid fa-location-dot"></i></span>
+          O app diz “fora da área autorizada”. O que faço?
+          <i class="fa-solid fa-chevron-down faq__chev"></i>
+        </summary>
+        <div class="faq__body">
+          <p>Significa que o GPS do aparelho indica que você está fora da área registrada para o seu local de trabalho. Verifique se o GPS está ativado, se você concedeu permissão de localização ao app e se está realmente dentro do raio do estabelecimento. Persistindo, fale com o RH.</p>
+        </div>
+      </details>
 
-<details class="faq">
-<summary>O reconhecimento facial não funciona. O que fazer?</summary>
-<p>Verifique se está em ambiente bem iluminado, sem óculos escuros ou máscara, com o rosto centralizado. Se persistir, peça ao administrador para refazer seu cadastro de selfies.</p>
-</details>
+      <details class="faq">
+        <summary>
+          <span class="faq__icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+          Posso instalar o app em mais de um celular?
+          <i class="fa-solid fa-chevron-down faq__chev"></i>
+        </summary>
+        <div class="faq__body">
+          <p>Cada conta fica vinculada a um único dispositivo autorizado pelo administrador. Se você trocou de celular, peça ao administrador da Vida Vista para autorizar o novo aparelho.</p>
+        </div>
+      </details>
 
-<details class="faq">
-<summary>Como excluir meus dados?</summary>
-<p>Você pode revogar o consentimento para uso de dados biométricos e solicitar exclusão dos seus dados a qualquer momento, conforme a LGPD. Detalhes em nossa <a href="index.html">Política de Privacidade</a>. Para solicitar, escreva para <a href="mailto:enioacc@gmail.com?subject=LGPD%20%E2%80%94%20Ponto%20Reflecta">enioacc@gmail.com</a>.</p>
-</details>
+      <details class="faq">
+        <summary>
+          <span class="faq__icon"><i class="fa-solid fa-sliders"></i></span>
+          O app pediu permissão de câmera, localização e notificações. Por quê?
+          <i class="fa-solid fa-chevron-down faq__chev"></i>
+        </summary>
+        <div class="faq__body">
+          <p><strong>Câmera</strong> — para capturar a selfie de verificação no momento da batida.</p>
+          <p><strong>Localização</strong> — para confirmar que você está dentro do seu local de trabalho (geofencing). Usada apenas no momento da batida, nunca em segundo plano.</p>
+          <p><strong>Notificações</strong> — para lembretes de entrada/saída e avisos administrativos.</p>
+        </div>
+      </details>
 
-<details class="faq">
-<summary>O aplicativo coleta meus dados?</summary>
-<p>Sim — apenas o necessário para o controle de ponto: identificação, biometria facial, localização (no momento da batida) e dados técnicos do aparelho. Nunca compartilhamos com terceiros para fins comerciais. Veja detalhes na <a href="index.html">Política de Privacidade</a>.</p>
-</details>
+      <details class="faq">
+        <summary>
+          <span class="faq__icon"><i class="fa-solid fa-face-viewfinder"></i></span>
+          O reconhecimento facial não funciona. O que fazer?
+          <i class="fa-solid fa-chevron-down faq__chev"></i>
+        </summary>
+        <div class="faq__body">
+          <p>Verifique se está em ambiente bem iluminado, sem óculos escuros ou máscara, com o rosto centralizado. Se persistir, peça ao administrador para refazer seu cadastro de selfies.</p>
+        </div>
+      </details>
 
-<h2>Links úteis</h2>
-<ul>
-  <li><a href="index.html">Política de Privacidade</a></li>
-  <li><a href="mailto:enioacc@gmail.com">E-mail de suporte</a></li>
-</ul>
+      <details class="faq">
+        <summary>
+          <span class="faq__icon"><i class="fa-solid fa-trash-can"></i></span>
+          Como excluir meus dados?
+          <i class="fa-solid fa-chevron-down faq__chev"></i>
+        </summary>
+        <div class="faq__body">
+          <p>Você pode revogar o consentimento de uso de dados biométricos e solicitar exclusão dos seus dados a qualquer momento, conforme a LGPD. Detalhes na <a href="index.html">Política de Privacidade</a>. Para solicitar, escreva para <a href="mailto:enioacc@gmail.com?subject=LGPD%20%E2%80%94%20Ponto%20Reflecta">enioacc@gmail.com</a>.</p>
+        </div>
+      </details>
 
-<footer>
-  © 2026 Vida Vista Clínica · Ponto Reflecta
-</footer>
+      <details class="faq">
+        <summary>
+          <span class="faq__icon"><i class="fa-solid fa-database"></i></span>
+          O aplicativo coleta meus dados?
+          <i class="fa-solid fa-chevron-down faq__chev"></i>
+        </summary>
+        <div class="faq__body">
+          <p>Sim — apenas o necessário para o controle de ponto: identificação, biometria facial, localização (no momento da batida) e dados técnicos do aparelho. Nunca compartilhamos com terceiros para fins comerciais. Veja os detalhes na <a href="index.html">Política de Privacidade</a>.</p>
+        </div>
+      </details>
+
+    </div>
+  </section>
 
 </main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__mark" src="assets/vidavista-mark.png" alt="" />
+      <span class="brand__name">Vida Vista</span>
+    </a>
+    <span class="site-footer__legal">© 2026 Vida Vista Clínica · Ponto Reflecta</span>
+    <nav class="site-footer__links">
+      <a href="index.html">Privacidade</a>
+      <a href="suporte.html">Suporte</a>
+      <a href="mailto:enioacc@gmail.com">Contato</a>
+    </nav>
+    <div class="compliance">
+      <i class="fa-solid fa-shield-halved"></i>
+      <span>Dados protegidos com <span class="mono">HTTPS/TLS 1.2+</span> · Senhas <span class="mono">bcrypt</span> · Biometria armazenada como vetor irreversível · LGPD</span>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
