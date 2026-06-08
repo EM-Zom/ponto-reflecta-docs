@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Vida Vista · Ponto Reflecta — Suporte</title>
-<meta name="description" content="Central de suporte do Ponto Reflecta, o aplicativo de controle de ponto da Vida Vista. Perguntas frequentes e contato." />
+<title>Vida Vista · Ponto Reflecta — Suporte / Support</title>
+<meta name="description" content="Central de suporte do Ponto Reflecta. Perguntas frequentes e contato. / Ponto Reflecta support centre. FAQ and contact." />
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="css/vidavista.css" />
 </head>
@@ -18,22 +18,53 @@
       <span class="brand__name">Vida Vista <span>· Ponto Reflecta</span></span>
     </a>
     <nav class="site-nav">
-      <a href="index.html">Privacidade</a>
-      <a href="suporte.html" aria-current="page">Suporte</a>
+      <a href="index.html">
+        <span class="lang-pt">Privacidade</span>
+        <span class="lang-en">Privacy</span>
+      </a>
+      <a href="termos.html">
+        <span class="lang-pt">Termos de Uso</span>
+        <span class="lang-en">Terms of Use</span>
+      </a>
+      <a href="suporte.html" aria-current="page">
+        <span class="lang-pt">Suporte</span>
+        <span class="lang-en">Support</span>
+      </a>
+      <button class="lang-btn" id="lang-toggle" aria-label="Switch language">
+        <span class="lang-pt">🇺🇸 EN</span>
+        <span class="lang-en">🇧🇷 PT</span>
+      </button>
     </nav>
   </div>
 </header>
 
 <!-- ===================== HERO ===================== -->
-<section class="hero" data-screen-label="Hero — Suporte">
+<section class="hero">
   <img class="hero__mark" src="assets/vidavista-mark.png" alt="" aria-hidden="true" />
   <div class="hero__inner">
-    <div class="hero__eyebrow">Ponto Reflecta · Central de ajuda</div>
-    <h1>Suporte</h1>
-    <p class="hero__lede">Problemas para bater ponto, dúvidas sobre o reconhecimento facial ou sobre seus dados? As respostas mais comuns estão aqui — e a nossa equipe responde rápido.</p>
+    <div class="hero__eyebrow">
+      <span class="lang-pt">Ponto Reflecta · Central de ajuda</span>
+      <span class="lang-en">Ponto Reflecta · Help centre</span>
+    </div>
+    <h1>
+      <span class="lang-pt">Suporte</span>
+      <span class="lang-en">Support</span>
+    </h1>
+    <p class="hero__lede">
+      <span class="lang-pt">Problemas para bater ponto, dúvidas sobre o reconhecimento facial ou sobre seus dados? As respostas mais comuns estão aqui — e a nossa equipe responde rápido.</span>
+      <span class="lang-en">Problems clocking in, questions about facial recognition or your data? The most common answers are here — and our team responds quickly.</span>
+    </p>
     <div class="hero__meta">
-      <span class="hchip"><i class="fa-regular fa-clock"></i> Resposta em até <span class="mono">1 dia útil</span></span>
-      <span class="hchip"><i class="fa-solid fa-circle-question"></i> 8 perguntas frequentes</span>
+      <span class="hchip">
+        <i class="fa-regular fa-clock"></i>
+        <span class="lang-pt">Resposta em até <span class="mono">1 dia útil</span></span>
+        <span class="lang-en">Response within <span class="mono">1 business day</span></span>
+      </span>
+      <span class="hchip">
+        <i class="fa-solid fa-circle-question"></i>
+        <span class="lang-pt">8 perguntas frequentes</span>
+        <span class="lang-en">8 frequently asked questions</span>
+      </span>
     </div>
   </div>
 </section>
@@ -41,125 +72,245 @@
 <!-- ===================== CONTENT ===================== -->
 <main class="single">
 
-  <!-- CONTACT first -->
-  <section data-screen-label="Contato">
+  <!-- CONTACT -->
+  <section>
     <div class="contact">
       <div class="contact__main">
-        <h3>Precisa falar com a gente?</h3>
-        <p>Se você está com problemas para usar o Ponto Reflecta, encontrou um erro ou tem uma sugestão, escreva. Inclua o modelo do aparelho e o que aconteceu — ajuda a resolver mais rápido.</p>
-        <div style="display:flex; gap:10px; flex-wrap:wrap;">
-          <a class="btn" href="mailto:dev@vidavista.ai?subject=Suporte%20Ponto%20Reflecta"><i class="fa-solid fa-paper-plane"></i> Enviar e-mail</a>
-          <a class="btn btn--ghost" href="index.html"><i class="fa-solid fa-shield-halved"></i> Política de Privacidade</a>
+        <div class="lang-pt">
+          <h3>Precisa falar com a gente?</h3>
+          <p>Se você está com problemas para usar o Ponto Reflecta, encontrou um erro ou tem uma sugestão, escreva. Inclua o modelo do aparelho e o que aconteceu — ajuda a resolver mais rápido.</p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn" href="mailto:dev@vidavista.ai?subject=Suporte%20Ponto%20Reflecta"><i class="fa-solid fa-paper-plane"></i> Enviar e-mail</a>
+            <a class="btn btn--ghost" href="index.html"><i class="fa-solid fa-shield-halved"></i> Política de Privacidade</a>
+          </div>
+        </div>
+        <div class="lang-en">
+          <h3>Need to get in touch?</h3>
+          <p>If you are having trouble using Ponto Reflecta, found a bug or have a suggestion, write to us. Include your device model and what happened — it helps us resolve things faster.</p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn" href="mailto:dev@vidavista.ai?subject=Support%20Ponto%20Reflecta"><i class="fa-solid fa-paper-plane"></i> Send email</a>
+            <a class="btn btn--ghost" href="index.html"><i class="fa-solid fa-shield-halved"></i> Privacy Policy</a>
+          </div>
         </div>
       </div>
       <div class="contact__aside">
-        <h4>Atendimento</h4>
-        <div class="sla">
-          <div class="sla__row"><i class="fa-solid fa-envelope"></i> <span class="mono">dev@vidavista.ai</span></div>
-          <div class="sla__row"><i class="fa-solid fa-clock"></i> Resposta em até <span class="mono">1 dia útil</span></div>
-          <div class="sla__row"><i class="fa-solid fa-headset"></i> Setor de TI / RH da Vida Vista</div>
+        <div class="lang-pt">
+          <h4>Atendimento</h4>
+          <div class="sla">
+            <div class="sla__row"><i class="fa-solid fa-envelope"></i> <span class="mono">dev@vidavista.ai</span></div>
+            <div class="sla__row"><i class="fa-solid fa-clock"></i> Resposta em até <span class="mono">1 dia útil</span></div>
+            <div class="sla__row"><i class="fa-solid fa-headset"></i> Setor de TI / RH da Vida Vista</div>
+          </div>
+        </div>
+        <div class="lang-en">
+          <h4>Contact details</h4>
+          <div class="sla">
+            <div class="sla__row"><i class="fa-solid fa-envelope"></i> <span class="mono">dev@vidavista.ai</span></div>
+            <div class="sla__row"><i class="fa-solid fa-clock"></i> Response within <span class="mono">1 business day</span></div>
+            <div class="sla__row"><i class="fa-solid fa-headset"></i> Vida Vista IT / HR team</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section style="margin-top:48px;" data-screen-label="Perguntas frequentes">
-    <div class="sec-head"><span class="sec-num"><i class="fa-solid fa-circle-question"></i></span><h2>Perguntas frequentes</h2></div>
+  <section style="margin-top:48px;">
 
-    <div class="faq-list">
+    <div class="lang-pt">
+      <div class="sec-head"><span class="sec-num"><i class="fa-solid fa-circle-question"></i></span><h2>Perguntas frequentes</h2></div>
+      <div class="faq-list">
 
-      <details class="faq" open>
-        <summary>
-          <span class="faq__icon"><i class="fa-solid fa-key"></i></span>
-          Esqueci minha senha. Como recupero?
-          <i class="fa-solid fa-chevron-down faq__chev"></i>
-        </summary>
-        <div class="faq__body">
-          <p>A senha de acesso é a mesma usada nos demais sistemas internos da Vida Vista. Para recuperar, entre em contato com o setor de TI / RH da clínica ou escreva para o e-mail de suporte acima.</p>
-        </div>
-      </details>
+        <details class="faq" open>
+          <summary>
+            <span class="faq__icon"><i class="fa-solid fa-key"></i></span>
+            Esqueci minha senha. Como recupero?
+            <i class="fa-solid fa-chevron-down faq__chev"></i>
+          </summary>
+          <div class="faq__body">
+            <p>A senha de acesso é a mesma usada nos demais sistemas internos da Vida Vista. Para recuperar, entre em contato com o setor de TI / RH da clínica ou escreva para o e-mail de suporte acima.</p>
+          </div>
+        </details>
 
-      <details class="faq">
-        <summary>
-          <span class="faq__icon"><i class="fa-solid fa-camera-retro"></i></span>
-          Por que o app pede para cadastrar 3 selfies?
-          <i class="fa-solid fa-chevron-down faq__chev"></i>
-        </summary>
-        <div class="faq__body">
-          <p>O Ponto Reflecta usa reconhecimento facial para garantir que <strong>ninguém bata seu ponto por você</strong>. As 3 selfies (frente, perfil esquerdo, perfil direito) ajudam o sistema a aprender seu rosto sob ângulos diferentes, com mais precisão. Depois disso, cada batida pede só uma selfie rápida.</p>
-        </div>
-      </details>
+        <details class="faq">
+          <summary>
+            <span class="faq__icon"><i class="fa-solid fa-camera-retro"></i></span>
+            Por que o app pede para cadastrar 3 selfies?
+            <i class="fa-solid fa-chevron-down faq__chev"></i>
+          </summary>
+          <div class="faq__body">
+            <p>O Ponto Reflecta usa reconhecimento facial para garantir que <strong>ninguém bata seu ponto por você</strong>. As 3 selfies (frente, perfil esquerdo, perfil direito) ajudam o sistema a aprender seu rosto sob ângulos diferentes, com mais precisão. Depois disso, cada batida pede só uma selfie rápida.</p>
+          </div>
+        </details>
 
-      <details class="faq">
-        <summary>
-          <span class="faq__icon"><i class="fa-solid fa-location-dot"></i></span>
-          O app diz “fora da área autorizada”. O que faço?
-          <i class="fa-solid fa-chevron-down faq__chev"></i>
-        </summary>
-        <div class="faq__body">
-          <p>Significa que o GPS do aparelho indica que você está fora da área registrada para o seu local de trabalho. Verifique se o GPS está ativado, se você concedeu permissão de localização ao app e se está realmente dentro do raio do estabelecimento. Persistindo, fale com o RH.</p>
-        </div>
-      </details>
+        <details class="faq">
+          <summary>
+            <span class="faq__icon"><i class="fa-solid fa-location-dot"></i></span>
+            O app diz "fora da área autorizada". O que faço?
+            <i class="fa-solid fa-chevron-down faq__chev"></i>
+          </summary>
+          <div class="faq__body">
+            <p>Significa que o GPS indica que você está fora da área registrada para o seu local de trabalho. Verifique se o GPS está ativado, se você concedeu permissão de localização ao app e se está realmente dentro do raio do estabelecimento. Persistindo, fale com o RH.</p>
+          </div>
+        </details>
 
-      <details class="faq">
-        <summary>
-          <span class="faq__icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
-          Posso instalar o app em mais de um celular?
-          <i class="fa-solid fa-chevron-down faq__chev"></i>
-        </summary>
-        <div class="faq__body">
-          <p>Cada conta fica vinculada a um único dispositivo autorizado pelo administrador. Se você trocou de celular, peça ao administrador da Vida Vista para autorizar o novo aparelho.</p>
-        </div>
-      </details>
+        <details class="faq">
+          <summary>
+            <span class="faq__icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+            Posso instalar o app em mais de um celular?
+            <i class="fa-solid fa-chevron-down faq__chev"></i>
+          </summary>
+          <div class="faq__body">
+            <p>Cada conta fica vinculada a um único dispositivo autorizado pelo administrador. Se você trocou de celular, peça ao administrador da Vida Vista para autorizar o novo aparelho.</p>
+          </div>
+        </details>
 
-      <details class="faq">
-        <summary>
-          <span class="faq__icon"><i class="fa-solid fa-sliders"></i></span>
-          O app pediu permissão de câmera, localização e notificações. Por quê?
-          <i class="fa-solid fa-chevron-down faq__chev"></i>
-        </summary>
-        <div class="faq__body">
-          <p><strong>Câmera</strong> — para capturar a selfie de verificação no momento da batida.</p>
-          <p><strong>Localização</strong> — para confirmar que você está dentro do seu local de trabalho (geofencing). Usada apenas no momento da batida, nunca em segundo plano.</p>
-          <p><strong>Notificações</strong> — para lembretes de entrada/saída e avisos administrativos.</p>
-        </div>
-      </details>
+        <details class="faq">
+          <summary>
+            <span class="faq__icon"><i class="fa-solid fa-sliders"></i></span>
+            O app pediu permissão de câmera, localização e notificações. Por quê?
+            <i class="fa-solid fa-chevron-down faq__chev"></i>
+          </summary>
+          <div class="faq__body">
+            <p><strong>Câmera</strong> — para capturar a selfie de verificação no momento da batida.</p>
+            <p><strong>Localização</strong> — para confirmar que você está dentro do local de trabalho. Usada apenas no momento da batida, nunca em segundo plano.</p>
+            <p><strong>Notificações</strong> — para lembretes de entrada/saída e avisos administrativos.</p>
+          </div>
+        </details>
 
-      <details class="faq">
-        <summary>
-          <span class="faq__icon"><i class="fa-solid fa-face-viewfinder"></i></span>
-          O reconhecimento facial não funciona. O que fazer?
-          <i class="fa-solid fa-chevron-down faq__chev"></i>
-        </summary>
-        <div class="faq__body">
-          <p>Verifique se está em ambiente bem iluminado, sem óculos escuros ou máscara, com o rosto centralizado. Se persistir, peça ao administrador para refazer seu cadastro de selfies.</p>
-        </div>
-      </details>
+        <details class="faq">
+          <summary>
+            <span class="faq__icon"><i class="fa-solid fa-face-viewfinder"></i></span>
+            O reconhecimento facial não funciona. O que fazer?
+            <i class="fa-solid fa-chevron-down faq__chev"></i>
+          </summary>
+          <div class="faq__body">
+            <p>Verifique se está em ambiente bem iluminado, sem óculos escuros ou máscara, com o rosto centralizado. Se persistir, peça ao administrador para refazer seu cadastro de selfies.</p>
+          </div>
+        </details>
 
-      <details class="faq">
-        <summary>
-          <span class="faq__icon"><i class="fa-solid fa-trash-can"></i></span>
-          Como excluir meus dados?
-          <i class="fa-solid fa-chevron-down faq__chev"></i>
-        </summary>
-        <div class="faq__body">
-          <p>Você pode revogar o consentimento de uso de dados biométricos e solicitar exclusão dos seus dados a qualquer momento, conforme a LGPD. Detalhes na <a href="index.html">Política de Privacidade</a>. Para solicitar, escreva para <a href="mailto:dev@vidavista.ai?subject=LGPD%20%E2%80%94%20Ponto%20Reflecta">dev@vidavista.ai</a>.</p>
-        </div>
-      </details>
+        <details class="faq">
+          <summary>
+            <span class="faq__icon"><i class="fa-solid fa-trash-can"></i></span>
+            Como excluir meus dados?
+            <i class="fa-solid fa-chevron-down faq__chev"></i>
+          </summary>
+          <div class="faq__body">
+            <p>Você pode solicitar a exclusão dos seus dados a qualquer momento, conforme a LGPD. Veja os detalhes na <a href="index.html">Política de Privacidade</a>. Para solicitar, escreva para <a href="mailto:dev@vidavista.ai?subject=LGPD%20%E2%80%94%20Ponto%20Reflecta">dev@vidavista.ai</a>.</p>
+          </div>
+        </details>
 
-      <details class="faq">
-        <summary>
-          <span class="faq__icon"><i class="fa-solid fa-database"></i></span>
-          O aplicativo coleta meus dados?
-          <i class="fa-solid fa-chevron-down faq__chev"></i>
-        </summary>
-        <div class="faq__body">
-          <p>Sim — apenas o necessário para o controle de ponto: identificação, biometria facial, localização (no momento da batida) e dados técnicos do aparelho. Nunca compartilhamos com terceiros para fins comerciais. Veja os detalhes na <a href="index.html">Política de Privacidade</a>.</p>
-        </div>
-      </details>
+        <details class="faq">
+          <summary>
+            <span class="faq__icon"><i class="fa-solid fa-database"></i></span>
+            O aplicativo coleta meus dados?
+            <i class="fa-solid fa-chevron-down faq__chev"></i>
+          </summary>
+          <div class="faq__body">
+            <p>Sim — apenas o necessário para o controle de ponto: identificação, biometria facial, localização (no momento da batida) e dados técnicos do aparelho. Nunca compartilhamos com terceiros para fins comerciais. Veja os detalhes na <a href="index.html">Política de Privacidade</a>.</p>
+          </div>
+        </details>
 
-    </div>
+      </div>
+    </div><!-- /lang-pt -->
+
+    <div class="lang-en">
+      <div class="sec-head"><span class="sec-num"><i class="fa-solid fa-circle-question"></i></span><h2>Frequently asked questions</h2></div>
+      <div class="faq-list">
+
+        <details class="faq" open>
+          <summary>
+            <span class="faq__icon"><i class="fa-solid fa-key"></i></span>
+            I forgot my password. How do I recover it?
+            <i class="fa-solid fa-chevron-down faq__chev"></i>
+          </summary>
+          <div class="faq__body">
+            <p>Your password is the same one used for Vida Vista's other internal systems. To recover it, contact the clinic's IT / HR team or write to the support email above.</p>
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>
+            <span class="faq__icon"><i class="fa-solid fa-camera-retro"></i></span>
+            Why does the app ask me to register 3 selfies?
+            <i class="fa-solid fa-chevron-down faq__chev"></i>
+          </summary>
+          <div class="faq__body">
+            <p>Ponto Reflecta uses facial recognition to ensure that <strong>no one can clock in on your behalf</strong>. The 3 selfies (front, left profile, right profile) help the system learn your face from different angles, improving accuracy. After that, each clock-in requires only a quick selfie.</p>
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>
+            <span class="faq__icon"><i class="fa-solid fa-location-dot"></i></span>
+            The app says "outside authorised area". What should I do?
+            <i class="fa-solid fa-chevron-down faq__chev"></i>
+          </summary>
+          <div class="faq__body">
+            <p>This means your device's GPS indicates you are outside the registered area for your workplace. Check that GPS is enabled, that you have granted location permission to the app, and that you are within the venue's radius. If the problem persists, contact HR.</p>
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>
+            <span class="faq__icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+            Can I install the app on more than one phone?
+            <i class="fa-solid fa-chevron-down faq__chev"></i>
+          </summary>
+          <div class="faq__body">
+            <p>Each account is linked to a single device authorised by an administrator. If you have changed phones, ask a Vida Vista administrator to authorise the new device.</p>
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>
+            <span class="faq__icon"><i class="fa-solid fa-sliders"></i></span>
+            The app requested camera, location and notification permissions. Why?
+            <i class="fa-solid fa-chevron-down faq__chev"></i>
+          </summary>
+          <div class="faq__body">
+            <p><strong>Camera</strong> — to capture the verification selfie at the time of each clock-in.</p>
+            <p><strong>Location</strong> — to confirm you are within your workplace. Used only at the moment of clocking in, never in the background.</p>
+            <p><strong>Notifications</strong> — for clock-in/out reminders and administrative notices.</p>
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>
+            <span class="faq__icon"><i class="fa-solid fa-face-viewfinder"></i></span>
+            Facial recognition is not working. What should I do?
+            <i class="fa-solid fa-chevron-down faq__chev"></i>
+          </summary>
+          <div class="faq__body">
+            <p>Make sure you are in a well-lit environment, without sunglasses or a mask, with your face centred in the frame. If the problem persists, ask an administrator to redo your selfie registration.</p>
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>
+            <span class="faq__icon"><i class="fa-solid fa-trash-can"></i></span>
+            How do I delete my data?
+            <i class="fa-solid fa-chevron-down faq__chev"></i>
+          </summary>
+          <div class="faq__body">
+            <p>You may request deletion of your data at any time, in accordance with Brazil's LGPD. See the <a href="index.html">Privacy Policy</a> for details, or write to <a href="mailto:dev@vidavista.ai?subject=LGPD%20%E2%80%94%20Ponto%20Reflecta">dev@vidavista.ai</a>.</p>
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>
+            <span class="faq__icon"><i class="fa-solid fa-database"></i></span>
+            Does the app collect my data?
+            <i class="fa-solid fa-chevron-down faq__chev"></i>
+          </summary>
+          <div class="faq__body">
+            <p>Yes — only what is necessary for attendance tracking: identification, facial biometrics, location (at the time of clock-in) and device information. We never share data with third parties for commercial purposes. See the <a href="index.html">Privacy Policy</a> for full details.</p>
+          </div>
+        </details>
+
+      </div>
+    </div><!-- /lang-en -->
+
   </section>
 
 </main>
@@ -173,16 +324,43 @@
     </a>
     <span class="site-footer__legal">© 2026 Vida Vista Clínica · Ponto Reflecta</span>
     <nav class="site-footer__links">
-      <a href="index.html">Privacidade</a>
-      <a href="suporte.html">Suporte</a>
-      <a href="mailto:dev@vidavista.ai">Contato</a>
+      <a href="index.html">
+        <span class="lang-pt">Privacidade</span>
+        <span class="lang-en">Privacy</span>
+      </a>
+      <a href="termos.html">
+        <span class="lang-pt">Termos de Uso</span>
+        <span class="lang-en">Terms of Use</span>
+      </a>
+      <a href="suporte.html">
+        <span class="lang-pt">Suporte</span>
+        <span class="lang-en">Support</span>
+      </a>
+      <a href="mailto:dev@vidavista.ai">
+        <span class="lang-pt">Contato</span>
+        <span class="lang-en">Contact</span>
+      </a>
     </nav>
     <div class="compliance">
       <i class="fa-solid fa-shield-halved"></i>
-      <span>Dados protegidos com <span class="mono">HTTPS/TLS 1.2+</span> · Senhas <span class="mono">bcrypt</span> · Biometria armazenada como vetor irreversível · LGPD</span>
+      <span class="lang-pt">Dados protegidos com <span class="mono">HTTPS/TLS 1.2+</span> · Senhas <span class="mono">bcrypt</span> · Biometria armazenada como vetor irreversível · LGPD</span>
+      <span class="lang-en">Data protected with <span class="mono">HTTPS/TLS 1.2+</span> · Passwords <span class="mono">bcrypt</span> · Biometrics stored as irreversible vector · LGPD</span>
     </div>
   </div>
 </footer>
+
+<script>
+(function(){
+  var html=document.documentElement;
+  var stored=localStorage.getItem('ponto-lang');
+  if(stored==='en') html.setAttribute('lang','en');
+  document.getElementById('lang-toggle').addEventListener('click',function(){
+    var next=html.getAttribute('lang')==='en'?'pt-BR':'en';
+    html.setAttribute('lang',next);
+    localStorage.setItem('ponto-lang',next==='en'?'en':'pt');
+  });
+})();
+</script>
 
 </body>
 </html>
