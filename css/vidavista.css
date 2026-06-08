@@ -380,3 +380,24 @@ code, kbd {
   .hero__inner { padding: 44px 20px 40px; }
   .brand__name span { display: none; }
 }
+
+/* ============================================================ LANGUAGE TOGGLE */
+/* Default: PT visible, EN hidden */
+.lang-en { display: none; }
+html[lang="en"] .lang-pt { display: none; }
+html[lang="en"] .lang-en { display: block; }
+html[lang="en"] .lang-en.lang-inline { display: inline; }
+html[lang="en"] span.lang-en { display: inline; }
+
+/* Toggle button in nav */
+.lang-btn {
+  margin-left: 8px;
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 6px 12px; border-radius: var(--r-pill);
+  border: 1.5px solid var(--line);
+  background: var(--surface); color: var(--ink-2);
+  font-size: 12.5px; font-weight: 700; letter-spacing: .04em;
+  cursor: pointer; transition: all .15s ease;
+  font-family: var(--font-sans);
+}
+.lang-btn:hover { border-color: var(--accent-600); color: var(--accent-ink); background: var(--accent-050); }
